@@ -97,19 +97,11 @@ TypeORM
 
 # Variáveis de ambiente
 Essas são as variaveis de ambiente que essa aplicação precisa para funcionar em qualquer ambiente. 
-Os valores que devem ser atribuidos a elas vão depender dos ambientes. Por exemplo `DATABASE_URL` não contem valor pois esse valor irá mudar de acordo com o endereço do banco que será criado para cada aplicação. Julgando que cada aplicação terá seu proprio banco. Já `PGSSLMODE` contem o valor `no-verify` pois será um valor comum para todos os ambientes.
+Os valores que devem ser atribuidos a elas vão depender dos ambientes.
 
 Para caso de ambiente **local** (sua máquina) deve ser criado um arquivo `.env` na raiz do projeto
 
  ```bash
-DATABASE_URL=
 NODE_ENV=
 PGSSLMODE=no-verify
-EMAIL_ADMIN=
-NODEMAILER_SECRET=
-NODEMAILER_EMAIL=
-NODEMAILER_PASSWORD=
-PASSWORD_ADMIN=
-NAME_ADMIN=
-SECRET=
 ```
