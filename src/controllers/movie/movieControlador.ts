@@ -2,7 +2,7 @@ import { Movie } from "@models/entity/Movies"
 import { Request, Response } from "express"
 import { getRepository } from "typeorm"
 
-export class MovieController {
+export class MovieControlador {
   async getMovies(req: Request, res: Response) {
     try {
       const moviesRepository = getRepository(Movie)
