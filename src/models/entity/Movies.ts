@@ -9,23 +9,38 @@ export class Movie {
   @Column({ name: "title", type: "varchar" })
   title: string
 
-  //   "gender":"string",
-  // "classification":"string",
-  // "subtitle":"string",
-  // "image":"string",
+  @Column({ name: "gender", type: "varchar" })
+  gender: string
 
-  @Column({ name: "releaseDate", type: "timestamp" })
-  releaseDate: Date
+  @Column({ name: "classification", type: "varchar" })
+  classification: string
 
-  // "director":"string",
-  //"writer":"string",
-  //"studio":"string",
-  //"actors":"string",
+  @Column({ name: "subtitle", type: "varchar" })
+  subtitle: string
+
+  @Column({ name: "image", type: "varchar" })
+  image: string
+
+  @Column({ name: "releasedate", type: "varchar" })
+  releasedate: string
+
+  @Column({ name: "director", type: "varchar" })
+  director: string
+
+  @Column({ name: "writer", type: "varchar" })
+  writer: string
+
+  @Column({ name: "studio", type: "varchar" })
+  studio: string
+
+  @Column({ name: "actors", type: "varchar" })
+  actors: string
 
   @Column({ name: "resume", type: "text" })
   resume: string
 
-  "awards": "string"
+  @Column({ name: "awards", type: "varchar" })
+  awards: string
 
   @Column({ name: "note", type: "int" })
   note: number
