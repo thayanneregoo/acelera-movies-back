@@ -10,4 +10,5 @@ export const defineRoutes = (app) => {
   app.get("/movie/:id", new MovieControlador().getMovieId)
   app.post("/movie", new MovieControlador().postMovie)
   app.delete("/movie/:id", new MovieControlador().deleteMovie)
+  app.put("/movie/:id", new MovieControlador().changeMovie)
 }
